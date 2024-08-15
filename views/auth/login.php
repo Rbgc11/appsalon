@@ -1,5 +1,5 @@
 <h1 class="nombre-pagina">Login</h1>
-<p class="descripcion-pagina">Inicia Sesión con tus datos</p>
+<p class="descripcion-pagina">Inicia Sesión con tus datos.</p>
 
 <?php 
     include_once __DIR__ . "/../templates/alertas.php";
