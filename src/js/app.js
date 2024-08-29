@@ -110,16 +110,19 @@ function paginaSiguiente() {
 }
 
 async function consultarAPI() {
+
     try {
-        const url = '/api/servicios' //'http://localhost:3000/api/servicios'
+        const url = 'http://localhost:3000/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
-
+    
     } catch (error) {
         console.log(error);
     }
 }
+
+
 
 function mostrarServicios(servicios) {
     servicios.forEach( servicio => {
